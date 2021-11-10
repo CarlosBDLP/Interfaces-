@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="488.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.cipfpbatoi.di.log_form_calc.LoginController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="99.00029299516183" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="216.45505383579342" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.5459167744587" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="122.45488283891183" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <ImageView fitHeight="487.0" fitWidth="606.0" GridPane.rowSpan="4">
+         <image>
+            <Image url="@fondoLogin.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="TitleText" text="Inicio sesion" textFill="#fffdef" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <VBox GridPane.rowIndex="2">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+
+         <Label fx:id="userLabel" alignment="TOP_LEFT" text="Usuario:" textFill="#f9fbff">
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+            <font>
+               <Font size="16.0" />
+            </font>
+         </Label>
+         <TextField fx:id="userText" prefWidth="0.0">
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+         </TextField>
+         <Label fx:id="passLabel" alignment="TOP_LEFT" text="Contraseña:" textFill="#fbffed">
+            <font>
+               <Font size="16.0" />
+            </font>
+            <VBox.margin>
+               <Insets bottom="10.0" />
+            </VBox.margin>
+         </Label>
+         <TextField fx:id="passText" />
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" GridPane.rowIndex="3">
+         <children>
+            <Button fx:id="loginButton" alignment="TOP_CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#iniciarSesion" text="Iniciar Sesion" />
+         </children>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <Label fx:id="errorLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="16.0" prefWidth="473.0" text="¡Usuario/contraseña incorrectos!" textFill="RED" visible="false" GridPane.valignment="BOTTOM">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <GridPane.margin>
+            <Insets left="5.0" right="5.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="successLabel" alignment="BOTTOM_CENTER" contentDisplay="BOTTOM" prefHeight="16.0" prefWidth="473.0" text="Autenticado. Iniciando sesión..." textFill="#faffef" visible="false">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</GridPane>

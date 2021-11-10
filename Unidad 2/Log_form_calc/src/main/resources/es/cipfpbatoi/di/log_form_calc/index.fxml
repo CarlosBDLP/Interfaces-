@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane prefHeight="545.0" prefWidth="631.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.cipfpbatoi.di.log_form_calc.MenuController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="202.72801369807888" minHeight="10.0" prefHeight="127.27315839862035" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="216.45505383579342" minHeight="10.0" prefHeight="110.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="160.5459167744587" minHeight="10.0" prefHeight="84.54569101481212" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="172.63699960856212" minHeight="10.0" prefHeight="154.45511484293712" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <ImageView fitHeight="545.0" fitWidth="632.0" GridPane.rowSpan="4">
+         <image>
+            <Image url="@fondo.jpg" />
+         </image>
+      </ImageView>
+      <Label text="MENU" textFill="BLUE" GridPane.halignment="CENTER">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <VBox alignment="TOP_CENTER" prefWidth="261.0" GridPane.rowIndex="1">
+          <padding>
+              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+          </padding>
+      
+                            <Label fx:id="welcomeText" text="Login" textFill="BLUE">
+            <VBox.margin>
+               <Insets bottom="10.0" top="10.0" />
+            </VBox.margin>
+            <font>
+               <Font size="18.0" />
+            </font>
+         </Label>
+          <Button onAction="#Login" text="Login">
+            <VBox.margin>
+               <Insets top="5.0" />
+            </VBox.margin>
+         </Button>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefWidth="235.0" GridPane.rowIndex="2">
+         <children>
+            <Label text="Formulario" textFill="BLUE">
+               <VBox.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Formulario" text="Registro">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Button>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="122.0" prefWidth="309.0" GridPane.rowIndex="3">
+         <children>
+            <Label prefHeight="27.0" prefWidth="100.0" text="Calculadora" textFill="BLUE">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#Calculadora" text="Iniciar">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin></Button>
+         </children>
+         <GridPane.margin>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </GridPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </VBox>
+   </children>
+</GridPane>
