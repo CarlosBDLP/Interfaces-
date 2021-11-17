@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="com.example.truebarra.BarraController">
+   <children>
+      <Pane layoutX="600.0" layoutY="400.0" prefHeight="200.0" prefWidth="200.0" />
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@fondo.png" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="barraCargar" layoutX="128.0" layoutY="306.0" prefHeight="44.0" prefWidth="344.0" />
+      <Pane layoutX="200.0" layoutY="34.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="200.0">
+               <image>
+                  <Image url="@Logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="204.0" prefHeight="101.0" prefWidth="130.0">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="130.0" layoutX="-5.0" layoutY="5.0">
+               <image>
+                  <Image url="@salado_preview_rev_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutX="444.0" layoutY="204.0" prefHeight="101.0" prefWidth="130.0">
+         <children>
+            <ImageView fitHeight="95.0" fitWidth="130.0" layoutY="-7.0">
+               <image>
+                  <Image url="@salado_preview_rev_1.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView  fx:id="IconoPan" fitHeight="44.0" fitWidth="46.0" layoutX="128.0" layoutY="350.0">
+         <image>
+            <Image url="@IconoPan.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
